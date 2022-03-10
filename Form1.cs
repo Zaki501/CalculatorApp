@@ -17,19 +17,6 @@ namespace CalculatorApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string s = (sender as Button).Text;
-            if (TxtBox.Text == "0")
-            {
-                TxtBox.Text = s;
-            }
-            else {
-                TxtBox.Text += s;
-            }
-
-        }
-
         private void nButton_Click (object sender, EventArgs e)
         {
             string s = (sender as Button).Text;
