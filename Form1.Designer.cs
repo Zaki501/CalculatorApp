@@ -40,11 +40,13 @@
             this.n9 = new System.Windows.Forms.Button();
             this.n0 = new System.Windows.Forms.Button();
             this.nDot = new System.Windows.Forms.Button();
-            this.Equals = new System.Windows.Forms.Button();
+            this.equals = new System.Windows.Forms.Button();
             this.nAdd = new System.Windows.Forms.Button();
             this.nSubtract = new System.Windows.Forms.Button();
             this.nMultiply = new System.Windows.Forms.Button();
             this.nDivide = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtBox
@@ -61,7 +63,7 @@
             // n1
             // 
             this.n1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.n1.Location = new System.Drawing.Point(12, 93);
+            this.n1.Location = new System.Drawing.Point(14, 93);
             this.n1.Name = "n1";
             this.n1.Size = new System.Drawing.Size(90, 90);
             this.n1.TabIndex = 1;
@@ -179,15 +181,16 @@
             this.nDot.UseVisualStyleBackColor = true;
             this.nDot.Click += new System.EventHandler(this.nButton_Click);
             // 
-            // Equals
+            // equals
             // 
-            this.Equals.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Equals.Location = new System.Drawing.Point(204, 381);
-            this.Equals.Name = "Equals";
-            this.Equals.Size = new System.Drawing.Size(90, 90);
-            this.Equals.TabIndex = 1;
-            this.Equals.Text = "=";
-            this.Equals.UseVisualStyleBackColor = true;
+            this.equals.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.equals.Location = new System.Drawing.Point(204, 381);
+            this.equals.Name = "equals";
+            this.equals.Size = new System.Drawing.Size(90, 90);
+            this.equals.TabIndex = 1;
+            this.equals.Text = "=";
+            this.equals.UseVisualStyleBackColor = true;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
             // nAdd
             // 
@@ -233,6 +236,28 @@
             this.nDivide.UseVisualStyleBackColor = true;
             this.nDivide.Click += new System.EventHandler(this.nButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(396, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 90);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "AC";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.AC_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(396, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 90);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "CE";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.CE_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -240,7 +265,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(535, 596);
             this.Controls.Add(this.nDivide);
-            this.Controls.Add(this.Equals);
+            this.Controls.Add(this.equals);
             this.Controls.Add(this.nDot);
             this.Controls.Add(this.nMultiply);
             this.Controls.Add(this.n9);
@@ -250,6 +275,8 @@
             this.Controls.Add(this.n0);
             this.Controls.Add(this.n5);
             this.Controls.Add(this.n7);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nAdd);
             this.Controls.Add(this.n3);
             this.Controls.Add(this.n4);
@@ -277,10 +304,12 @@
         private Button n9;
         private Button n0;
         private Button nDot;
-        private Button Equals;
+        private Button equals;
         private Button nAdd;
         private Button nSubtract;
         private Button nMultiply;
         private Button nDivide;
+        private Button button1;
+        private Button button2;
     }
 }
